@@ -10,10 +10,10 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string REGEX_Email = "^[A-Za-z0-9]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}$";
-        public bool ValidateNamecode(string email)
+        public static string REGEX_MOBILENO = "^(91)[' ']?[7-9]{1}[0-9]{9}$";
+        public bool ValidateMobilecode(string mobile)
         {
-            return Regex.IsMatch(email, REGEX_Email);
+            return Regex.IsMatch(mobile, REGEX_MOBILENO);
         }
     }
 }

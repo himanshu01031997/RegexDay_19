@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             Pattern p = new Pattern();
-            Console.WriteLine("Enter The Emailid:");
-            string Emailid = Console.ReadLine();
-            bool value= p.ValidateNamecode(Emailid);
+            Console.WriteLine("Enter The MobileNo:");
+            string MobileNo = Console.ReadLine();
+            bool value= p.ValidateMobilecode(MobileNo);
             if (value)
             {
-                Console.WriteLine("Emailid is Correct");
+                Console.WriteLine("MobileNo is Correct");
             }
             else
             {
-                Console.WriteLine("Emailid is not Correct");
+                Console.WriteLine("MobileNo is not Correct");
             }
             
         }
