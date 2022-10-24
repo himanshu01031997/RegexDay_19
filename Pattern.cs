@@ -10,7 +10,7 @@ namespace RegexDemo {
 //{[a-z][A-Z]{1,7}
 public class Pattern
     {
-        public static string REGEX_PASSWORD = "^[A-Z][a-z]{7}$";
+        public static string REGEX_PASSWORD = "^[1-9]{1,7}[A-Za-z]{1,7}$";
         public bool ValidateMobilePass(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORD);
