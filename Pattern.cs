@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography.X509Certificates;
 
-namespace RegexDemo
-{
-    public class Pattern
+namespace RegexDemo { 
+//{[a-z][A-Z]{1,7}
+public class Pattern
     {
-        public static string REGEX_PASSWORD = "^[a-zA-Z0-9]{8}$";
+        public static string REGEX_PASSWORD = "^[A-Z][a-z]{7}$";
         public bool ValidateMobilePass(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORD);

@@ -14,7 +14,7 @@
             }
             else
             {
-                Console.WriteLine("Mobilepassword is not Correct");
+                Console.WriteLine("Mobilepassword is Not Correct");
             }
             
         }
