@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             Pattern p = new Pattern();
-            Console.WriteLine("Enter The first name:");
-            string firstname=Console.ReadLine();
-            bool value= p.ValidateNamecode(firstname);
+            Console.WriteLine("Enter The Last name:");
+            string Lastname=Console.ReadLine();
+            bool value= p.ValidateNamecode(Lastname);
             if (value)
             {
-                Console.WriteLine("Name is Correct");
+                Console.WriteLine("LastName is Correct");
             }
             else
             {
-                Console.WriteLine("Name is not Correct");
+                Console.WriteLine("LastName is not Correct");
             }
             
         }

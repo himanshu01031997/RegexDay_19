@@ -10,7 +10,7 @@ namespace RegexDemo
 {
     public  class Pattern
     {
-        public static string REGEX_NAME = "^[A-Z][a-zA-Z]{2,15}";
+        public static string REGEX_NAME = "^[A-Z][a-z]{2,15}";
         public  bool ValidateNamecode(string NAME)
         {
             return Regex.IsMatch(NAME, REGEX_NAME);
