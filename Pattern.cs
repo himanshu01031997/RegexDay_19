@@ -10,10 +10,10 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string REGEX_MOBILENO = "^(91)[' ']?[7-9]{1}[0-9]{9}$";
-        public bool ValidateMobilecode(string mobile)
+        public static string REGEX_PASSWORD = "^[a-zA-Z0-9]{8}$";
+        public bool ValidateMobilePass(string password)
         {
-            return Regex.IsMatch(mobile, REGEX_MOBILENO);
+            return Regex.IsMatch(password, REGEX_PASSWORD);
         }
     }
 }

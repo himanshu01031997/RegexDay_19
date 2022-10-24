@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             Pattern p = new Pattern();
-            Console.WriteLine("Enter The MobileNo:");
-            string MobileNo = Console.ReadLine();
-            bool value= p.ValidateMobilecode(MobileNo);
+            Console.WriteLine("Enterr The Mobilepass:");
+            string MobilePW = Console.ReadLine();
+            bool value= p.ValidateMobilePass(MobilePW);
             if (value)
             {
-                Console.WriteLine("MobileNo is Correct");
+                Console.WriteLine("Mobilepassword is Correct");
             }
             else
             {
-                Console.WriteLine("MobileNo is not Correct");
+                Console.WriteLine("Mobilepassword is not Correct");
             }
             
         }
