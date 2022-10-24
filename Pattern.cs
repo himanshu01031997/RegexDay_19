@@ -10,7 +10,7 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string REGEX_PASSWORD = "^[a-zA-Z0-9]{8}$";
+        public static string REGEX_PASSWORD = "^[a-z0-9]{8}$";
         public bool ValidateMobilePass(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORD);
